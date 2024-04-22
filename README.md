@@ -2,7 +2,8 @@
 
 This project is aimed at creating a garden booking system using various technologies such as HTML, CSS, JavaScript, Bootstrap, Spring Boot, and Thymeleaf. The system includes components like booking, service, about us, and an admin panel. It allows users to book garden slots on a weekly basis, with special consideration for weeks with higher customer demand.
 
-Technologies Used
+
+Technologies Used:-
 
 HTML: Used for structuring the web pages.
 
@@ -16,7 +17,8 @@ Spring Boot: Employed for developing the backend server and managing the busines
 
 Thymeleaf: Used as a server-side Java template engine for processing and rendering HTML templates.
 
-Components
+
+Components :-
 
 Booking: Allows users to book garden slots for specific dates and times.
 
@@ -29,7 +31,7 @@ Admin Panel: Provides administrative functionalities for managing bookings and s
 Weekly Customer Analysis: Analyzes the weekly customer data to identify weeks with high customer demand.
 
 
-Usage
+Usage:-
 
 To run the project locally:
 
