@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+     <link rel="stylesheet" href="CSS/admin-dashboard.css">
+</head>
+<body>
+<div class="container">
+    <h1>Admin Dashboard</h1>
+    <p>Weekly Counts:</p>
+    <!-- Display weekly counts with start and end dates -->
+    <ul>
+        <li th:each="entry : ${weeklyCounts}">
+            <span th:text="${entry.key.startDate}"></span> to <span th:text="${entry.key.endDate}"></span>: <span th:text="${entry.value}"></span> customers
+        </li>
+    </ul>
+    <p>Week of Maximum Count of Customers: <span th:text="${maxCountMonth}"></span></p>
+    <p>Starting Date of Month with Maximum Count: <span th:text="${maxCountMonthStartDate}"></span></p>
+    <p>Ending Date of Month with Maximum Count: <span th:text="${maxCountMonthEndDate}"></span></p>
+    <!-- Logout button -->
+    <form action="/admin/logout" method="post">
+        <button class="btn btn-outline-success btn-lg text-white"><a href="/">Back TO Home</a></button>
+    </form>
+</div>
+</body>
+</html>

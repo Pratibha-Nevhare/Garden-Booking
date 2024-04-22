@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden Service Booking</title>
+     <link rel="stylesheet" href="CSS/services.css">
+</head>
+<body>
+    <h1>Garden Service Booking Form</h1>
+    <form id="bookingForm" action="/service" method="GET">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+        
+        <label for="serviceType">Service Type:</label>
+        <select id="serviceType" name="serviceType" required>
+            <option value="lawn-mowing">Lawn Mowing</option>
+            <option value="weed-removal">Weed Removal</option>
+            <option value="pruning">Pruning</option>
+            <option value="planting">Planting</option>
+            <option value="landscape-design">Landscape Design</option>
+        </select><br><br>
+        
+        <label for="serviceDate">Preferred Service Date:</label>
+        <input type="date" id="serviceDate" name="serviceDate" required><br><br>
+        
+        <label for="additionalInfo">Additional Information:</label><br>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50"></textarea><br><br>
+        
+        <button type="submit">Book Service</button>
+    </form>
+</body>
+</html>
